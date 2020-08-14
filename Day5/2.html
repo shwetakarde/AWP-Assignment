@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Over</title>
+
+    <script src="2.js"></script>
+
+    <style>
+        .main {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .element {
+            color: white;
+            background-color: black;
+            padding: 23px;
+            font-size: 51px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main" id='id1'>
+        <div id='id2' class="element" onmouseover="mousehandle()" onmouseout="getback()">
+            Magic !!!!!!!!
+        </div>
+
+    </div>
+</body>
+
+</html>
