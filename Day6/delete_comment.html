@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="delete_comment.js"></script>
+
+    <style>
+        #main {
+            display: flex;
+
+            width: 70vh;
+            height: 100vh;
+            flex-direction: column;
+            background-color: beige;
+
+        }
+
+        #id1 {
+            font-size: 21px;
+            background-color: aquamarine;
+            padding: 6px;
+            margin-bottom: 10px;
+        }
+
+        #id2 {
+            font-size: 20px;
+            padding: 10px;
+            margin-bottom: 15px;
+
+        }
+
+        #id3 {
+            background: linear-gradient(beige, grey);
+            font-size: 25px;
+            border: 5px solid wheat;
+            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="main">
+        <div id='id1'>
+            Some has Posted Something !!!!!!
+        </div>
+
+        <div>
+            <input type="text" id='id2' style="width:200px;padding:8px;color: brown;font-family: cursive;">
+        </div>
+
+        <div>
+            <button id='id3' onclick="likehere()">Like</button>
+            <button id='id3' onclick="commenthere()">Comment</button>
+        </div>
+
+        <div id='id4'>
+            <div id='referenceid' style="display: flex;justify-content: space-between;color:violet;visibility: hidden;">
+                <div>sample Commnet</div>
+                <button onclick="deletehere(this)">Delete</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+</body>
+
+</html>
