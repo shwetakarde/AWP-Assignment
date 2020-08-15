@@ -1,0 +1,88 @@
+<html>
+
+<head>
+    <title>CALCULATOR</title>
+    <style type="text/css">
+        #h1 {
+            font-size: 40px;
+            color: tomato;
+            font-weight: bold;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        #main {
+            width: 400px;
+            height: 400px;
+            align-content: center;
+            position: relative;
+            margin: 0 auto;
+
+
+        }
+
+        #result {
+            width: 230px;
+            height: 40px;
+        }
+
+        #clear {
+            width: 60px;
+            height: 45px;
+            margin-top: 10px;
+
+        }
+
+        .btn {
+            width: 70px;
+            height: 70px;
+            margin-top: 10px;
+            font-size: 31px;
+        }
+
+        body {
+            background: linear-gradient(beige, yellowgreen);
+        }
+    </style>
+</head>
+
+<body>
+    <p id="h1">CALCULATOR</p>
+    <div id="main">
+        <div>
+            <input type="text" id="result">
+            <input type="button" id="clear" value="c" onclick="clr()" /><br>
+            <input type="button" class="btn" value="1" onclick="cal('1')">
+            <input type="button" class="btn" value="2" onclick="cal('2')">
+            <input type="button" class="btn" value="3" onclick="cal('3')">
+            <input type="button" class="btn" value="/" onclick="cal('/')"><br>
+            <input type="button" class="btn" value="4" onclick="cal('4')">
+            <input type="button" class="btn" value="5" onclick="cal('5')">
+            <input type="button" class="btn" value="6" onclick="cal('6')">
+            <input type="button" class="btn" value="*" onclick="cal('*')"><br>
+            <input type="button" class="btn" value="7" onclick="cal('7')">
+            <input type="button" class="btn" value="8" onclick="cal('8')">
+            <input type="button" class="btn" value="9" onclick="cal('9')">
+            <input type="button" class="btn" value="-" onclick="cal('-')"><br>
+            <input type="button" class="btn" value="." onclick="cal('.')">
+            <input type="button" class="btn" value="0" onclick="cal('0')">
+            <input type="button" class="btn" value="=" onclick="solve()">
+            <input type="button" class="btn" value="+" onclick="cal('+')"><br>
+        </div>
+    </div>
+    <script>
+        function cal(val) {
+            document.querySelector("#result").value = document.querySelector("#result").value + val;
+        }
+        function solve() {
+            var N1 = document.querySelector("#result").value;
+            var N2 = eval(N1);
+            document.querySelector("#result").value = N2;
+        }
+        function clr() {
+            document.querySelector("#result").value = "";
+        }
+    </script>
+</body>
+
+</html>
