@@ -1,0 +1,48 @@
+.container{
+    border: 0px solid black;
+
+}
+.row{
+    border:0px solid red;
+    
+}
+.col,.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11,.col-12{
+    border: 0px solid green;
+}
+body{
+    background-color: grey;
+}
+#header{
+    background-color: orange;
+    padding: 10px 5px 10px;
+
+}
+#menu{
+    background-color: pink;
+    padding: 5px  10px 10px;
+    
+}
+#menu ul{
+    list-style-type:none;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+#menu ul li{
+    display: inline-block;
+   
+}
+#content{
+    background-color: white;
+}
+#sidebar{
+    background-color: lightblue;
+    
+
+}
+#footer{
+    background-color: orange;
+
+    
+}
